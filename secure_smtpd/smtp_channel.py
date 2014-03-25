@@ -120,7 +120,9 @@ class SMTPChannel(smtpd.SMTPChannel):
                 self.__peer,
                 self.__mailfrom,
                 self.__rcpttos,
-                self.__data
+                self.__data,
+                self.username,
+                self.password
             )
             self.__rcpttos = []
             self.__mailfrom = None
